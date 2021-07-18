@@ -1,0 +1,208 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  header {
+    background: #f7f8f9;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header nav {
+    margin-top: 10px;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  }
+  
+  header nav i {
+    font-size: 2rem;
+  }
+  
+  header nav a {
+    color: black;
+  }
+  
+  .cover {
+    padding: 16px 32px;
+    background: #f7f8f9;
+  }
+  
+  .cover img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .cover h2 {
+    position: relative;
+  }
+  
+  .cover button {
+    background: #f6e05e;
+    border-radius: 25px;
+    padding: 10px 48px;
+    margin-top: 20px;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    border-width: 0;
+    cursor: pointer;
+  }
+  
+  .cover button:hover {
+    background: #f7e576;
+    border-color: #f7e576;
+  }
+  
+  .about {
+    padding: 16px 32px;
+  }
+  
+  .about .form-field {
+    font-weight: bold;
+  }
+  
+  /* Later merge .cover img into this */
+  .about img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .services {
+    padding: 16px 32px;
+  }
+  
+  .services h2 {
+    text-align: center;
+  }
+  
+  .services div {
+    text-align: center;
+  }
+  
+  .skills {
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .skills .ratings-container {
+    background: #f7f8f9;
+    width: 100%;
+    padding: 32px;
+  }
+  
+  .skills .ratings-text {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .skills .bar-outer {
+    background: #e9ecef;
+    border-radius: 10px;
+    height: 1rem;
+    overflow-x: hidden;
+    margin-top: 10px;
+  }
+  
+  .skills .bar-inner {
+    background: #f6e05e;
+    height: 1rem;
+  }
+  
+  .skills .bar-inner.one {
+    width: 90%;
+  }
+  
+  .skills .bar-inner.two {
+    width: 80%;
+  }
+  
+  .skills .ratings-box {
+    margin-bottom: 30px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 56px;
+      padding-right: 56px;
+    }
+    header nav {
+      margin-top: 0;
+      display: flex;
+      width: 20%;
+      justify-content: space-around;
+    }
+  
+    header nav i {
+      font-size: 1rem;
+    }
+  
+    .cover {
+      padding-left: 56px;
+      padding-right: 56px;
+    }
+  
+    .about {
+      display: flex;
+    }
+  
+    .about div {
+      width: 50%;
+    }
+  
+    .about div img {
+      max-width: 70%;
+    }
+  
+    .about div:nth-child(2) {
+      text-align: right;
+    }
+  
+    .services > div {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .skills .ratings-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .skills .ratings-container .ratings-group {
+      flex-basis: 40%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .cover {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .about {
+      padding-left: 56px;
+      padding-right: 56px;
+    }
+  
+    .about div img {
+      max-width: 50%;
+    }
+  }
